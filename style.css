@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Carissa';
+  src: url('fonts/Carissa FREE.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+}
+/* HEADER */
+/*******************************/
+header {
+  min-height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  font-family: 'Carissa';
+  text-decoration: none;
+}
+.logo h1 {
+  font-size: 4rem;
+  color: #1e555c;
+  transition: 0.3s;
+}
+.logo:hover h1 {
+  opacity: 0.8;
+}
+
+/* CONTAINER */
+/*******************************/
+.color-group {
+  width: 100%;
+  height: calc(100% - 10rem);
+  display: flex;
+}
+
+/* COLOR ITEMS */
+/*******************************/
+.color-item {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 10rem;
+  background-color: bisque;
+}
+.color-item p {
+  font-size: 3rem;
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.color-item button {
+  margin: 3rem 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.color-item button i {
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.color-item button:hover i {
+  opacity: 0.6;
+}
